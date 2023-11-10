@@ -1,5 +1,6 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-export default function FloatingList() {
-  return <div className="main-content">Hello World</div>;
+export default function MainContents() {
+  return <Link to="/test">test</Link>;
 }
