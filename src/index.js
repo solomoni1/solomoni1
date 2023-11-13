@@ -6,6 +6,8 @@ import baseTheme from './data/baseTheme';
 import Root, { loader as rootLoader, action as rootAction } from './routes/Root';
 import Contact, { loader as contactLoader } from './routes/Contact';
 import EditContact, { action as editAction } from './routes/Edit';
+import { action as destroyAction } from './routes/Destroy';
+import Index from './routes/Index';
 import ErrorPage from './pages/ErrorPage';
 import './scss/tutorial.css';
 // import router from './router/router';
@@ -19,6 +21,7 @@ const router = createBrowserRouter([
     loader: rootLoader,
     action: rootAction,
     children: [
+      { index: true, element: <Index /> },
       {
         path: 'contacts/:contactId',
         element: <Contact />,
@@ -29,8 +32,12 @@ const router = createBrowserRouter([
         element: <EditContact />,
         loader: contactLoader,
         action: editAction,
-      }
-    ]
+      },
+      {
+        path: 'contacts/:contactId/destroy',
+        action: destroyAction,
+      },
+    ],
   },
 ]);
 

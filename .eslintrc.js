@@ -16,6 +16,7 @@ module.exports = {
     'react/prefer-stateless-function': 0,
     'react/prop-types': 0,
     'react/state-in-constructor': 0,
+    'react/jsx-curly-newline': 0,
     'import/extensions': 0,
     'import/imports-first': ['error', 'absolute-first'],
     'import/newline-after-import': 2,
