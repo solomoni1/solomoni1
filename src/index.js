@@ -6,7 +6,7 @@ import {
   createRoutesFromElements,
   Route,
 } from 'react-router-dom';
-import { ThemeProvider } from '@mui/material';
+import { ThemeProvider, CssBaseline } from '@mui/material';
 import baseTheme from './data/baseTheme';
 import Root, {
   loader as rootLoader,
@@ -20,7 +20,7 @@ import EditContact, { action as editAction } from './routes/Edit';
 import { action as destroyAction } from './routes/Destroy';
 import Index from './routes/Index';
 import ErrorPage from './pages/ErrorPage';
-import './scss/tutorial.css';
+import './scss/index.scss';
 // import router from './router/router';
 import reportWebVitals from './reportWebVitals';
 
@@ -55,11 +55,12 @@ const router = createBrowserRouter(
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <ThemeProvider theme={baseTheme}>
-    <React.StrictMode>
+  <React.StrictMode>
+    <ThemeProvider theme={baseTheme}>
+      <CssBaseline />
       <RouterProvider router={router} />
-    </React.StrictMode>
-  </ThemeProvider>
+    </ThemeProvider>
+  </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
