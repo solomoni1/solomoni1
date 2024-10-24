@@ -8,8 +8,8 @@
         {title: 'title4', contents: 'contents4'},
         {title: 'title5', contents: 'contents5'},
 ];
-
 </script>
+
 <div class="main-contents">
     <div class="contents-title">
         Hi
