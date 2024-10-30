@@ -16,7 +16,6 @@
 <style lang="scss">
     .gnb {
         width: 200px;
-        flex: 1;
         ul{
             padding: 0;
             margin: 0;

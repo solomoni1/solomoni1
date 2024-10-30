@@ -8,7 +8,9 @@
 <Header />
 <div class="main-container">
 	<Gnb />
-	<slot />
+	<div class="main-contents">
+		<slot />
+	</div>
 </div>
 <Footer />
 
@@ -16,6 +18,9 @@
 	.main-container {
 		display: flex;
 		height: 500px;
-		
+		.main-contents {
+			background-color: lightgrey;
+			flex: 1;
+    	}
 	}
 </style>
