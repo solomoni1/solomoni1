@@ -39,9 +39,9 @@ Specialized enterprise software company which offers middleware, mainframe solut
 
 # ☑️ Projects
 
-- [SuperFrame Master](portfolio/project_portfolio/Superframe_Master.md)
-- [T-UP](portfolio/project_portfolio/T-UP.md)
-- [Nextrade](portfolio/project_portfolio/Nextrade.md)
+- [SuperFrame Master](project_portfolio/Superframe_Master.md)
+- [T-UP](project_portfolio/T-UP.md)
+- [Nextrade](project_portfolio/Nextrade.md)
 
 ---
 
